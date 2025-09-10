@@ -145,6 +145,15 @@ export default function Intro() {
         >
           <BsWhatsapp />
         </a>
+
+        <a
+          className="bg-white p-4 text-accent-600 hover:text-accent-800 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-300 cursor-pointer border-2 border-accent-200 hover:border-accent-400 dark:bg-dark-100 dark:text-accent-400 dark:border-dark-300 shadow-lg hover:shadow-xl hover:shadow-accent-500/20"
+          href="https://github.com/Ilbasuttaqwa"
+          target="_blank"
+          title="GitHub Profile"
+        >
+          <FaGithubSquare />
+        </a>
       </motion.div>
     </section>
   );
