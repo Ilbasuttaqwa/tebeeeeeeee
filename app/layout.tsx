@@ -11,8 +11,8 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Ilham Basuttaqwa | Personal Portfolio",
-  description: "Ilham Basuttaqwa is a full-stack developer specializing in modern web technologies.",
+  title: "Ilbasuttaqwa | Personal Portfolio",
+  description: "Ilbasuttaqwa is a full-stack developer specializing in modern web technologies.",
 };
 
 export default function RootLayout({
