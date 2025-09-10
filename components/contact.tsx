@@ -33,8 +33,8 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Silakan hubungi saya langsung melalui email{" "}
-        <a className="underline" href="mailto:ilbasuttaqwa@gmail.com">
-          ilbasuttaqwa@gmail.com
+        <a className="underline" href="mailto:tbdream9@gmail.com">
+          tbdream9@gmail.com
         </a>{" "}
         atau melalui form di bawah ini.
       </p>
