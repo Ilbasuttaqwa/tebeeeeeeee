@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
@@ -77,19 +77,25 @@ export default function Intro() {
         <span className="font-bold mt-2 block">
           Saya seorang{" "}
           <GlitchText 
-            text="IT Specialist" 
+            text="IT Specialist & Full-Stack Developer" 
             className="bg-gradient-to-r from-accent-500 to-primary-500 bg-clip-text text-transparent"
             intensity="medium"
           />
         </span>
         <br />
-        <span className="mt-2 block">
-          Saya fokus pada{" "}
+        <span className="mt-2 block text-gray-700 dark:text-gray-300">
+          Berpengalaman di{" "}
+          <span className="font-semibold text-primary-600 dark:text-primary-400">CV Tiga Putra Perkasa</span>
+          {" "}sebagai IT Specialist dengan keahlian dalam{" "}
           <RotatingText 
-            texts={["pengembangan web", "sistem IT", "React & Next.js", "remote working"]}
+            texts={["React & Next.js", "sistem manajemen", "pengembangan web", "remote working", "troubleshooting IT"]}
             className="font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
             interval={2500}
           />
+        </span>
+        <br />
+        <span className="mt-3 block text-sm text-gray-600 dark:text-gray-400">
+          💼 Spesialisasi: Pengembangan aplikasi web modern, sistem IT, dan solusi teknologi inovatif
         </span>
       </motion.h1>
 
@@ -124,18 +130,20 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-primary-600 hover:text-primary-800 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-300 cursor-pointer border-2 border-primary-200 hover:border-primary-400 dark:bg-dark-100 dark:text-primary-400 dark:border-dark-300 shadow-lg hover:shadow-xl hover:shadow-primary-500/20"
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/much-ilbasuttaqwa-65418830a/"
           target="_blank"
+          title="LinkedIn Profile"
         >
           <BsLinkedin />
         </a>
 
         <a
-          className="bg-white p-4 text-accent-600 hover:text-accent-800 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-300 cursor-pointer border-2 border-accent-200 hover:border-accent-400 dark:bg-dark-100 dark:text-accent-400 dark:border-dark-300 shadow-lg hover:shadow-xl hover:shadow-accent-500/20"
-          href="https://github.com/ilbasuttaqwa"
+          className="bg-green-500 p-4 text-white hover:bg-green-600 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-400 hover:border-green-500 shadow-lg hover:shadow-xl hover:shadow-green-500/20"
+          href="https://wa.me/6283846249279"
           target="_blank"
+          title="WhatsApp: 083846249279"
         >
-          <FaGithubSquare />
+          <BsWhatsapp />
         </a>
       </motion.div>
     </section>

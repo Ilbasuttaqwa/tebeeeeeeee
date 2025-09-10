@@ -168,9 +168,9 @@ Project ini menggunakan MIT License. Lihat file `LICENSE` untuk detail.
 ## 📞 Contact
 
 **much.ilbasuttaqwa**
-- 📧 Email: ilbasuttaqwa@gmail.com
-- 💼 LinkedIn: [linkedin.com](https://linkedin.com)
-- 🐙 GitHub: [@ilbasuttaqwa](https://github.com/ilbasuttaqwa)
+- 📧 Email: tbdream9@gmail.com
+- 💼 LinkedIn: [Much Ilbasuttaqwa](https://www.linkedin.com/in/much-ilbasuttaqwa-65418830a/)
+- 📱 WhatsApp: [083846249279](https://wa.me/6283846249279)
 
 ---
 
