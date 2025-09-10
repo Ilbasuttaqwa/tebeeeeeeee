@@ -23,6 +23,67 @@ export default function Intro() {
     >
       <div className="flex items-center justify-center">
         <div className="relative">
+          {/* Fire animations around profile */}
+          <motion.div
+            className="absolute -top-8 -left-8 w-16 h-20 z-0"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 1, duration: 0.8 }}
+          >
+            <Image
+              src="/fire-animation.svg"
+              alt="fire animation"
+              width={64}
+              height={80}
+              className="animate-pulse"
+            />
+          </motion.div>
+          
+          <motion.div
+            className="absolute -top-6 -right-6 w-12 h-16 z-0"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 1.2, duration: 0.8 }}
+          >
+            <Image
+              src="/fire-animation.svg"
+              alt="fire animation"
+              width={48}
+              height={64}
+              className="animate-bounce"
+            />
+          </motion.div>
+          
+          <motion.div
+            className="absolute -bottom-4 -left-4 w-10 h-14 z-0"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 1.4, duration: 0.8 }}
+          >
+            <Image
+              src="/fire-animation.svg"
+              alt="fire animation"
+              width={40}
+              height={56}
+              className="animate-pulse"
+            />
+          </motion.div>
+          
+          <motion.div
+            className="absolute -bottom-2 -right-8 w-14 h-18 z-0"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 1.6, duration: 0.8 }}
+          >
+            <Image
+              src="/fire-animation.svg"
+              alt="fire animation"
+              width={56}
+              height={72}
+              className="animate-bounce"
+            />
+          </motion.div>
+          
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -31,7 +92,7 @@ export default function Intro() {
               stiffness: 260,
               damping: 20,
             }}
-            className="animate-float"
+            className="animate-float relative z-10"
           >
             <Image
               src="/WhatsApp Image 2025-09-10 at 15.53.38_d9a87916.jpg"
