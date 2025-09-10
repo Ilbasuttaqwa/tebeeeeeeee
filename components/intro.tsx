@@ -68,7 +68,7 @@ export default function Intro() {
       >
         <span className="font-bold">
           <TypewriterText 
-            text="Halo, saya Ilham Basuttaqwa." 
+            text="Halo, Saya Much.Ilbasuttaqwa." 
             className="bg-gradient-primary bg-clip-text text-transparent"
             delay={500}
           />
