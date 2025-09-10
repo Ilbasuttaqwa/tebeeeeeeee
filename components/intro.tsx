@@ -9,9 +9,10 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { TypewriterText, GlitchText, WaveText, RotatingText } from "@/components/animated-text";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Beranda", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -26,18 +27,20 @@ export default function Intro() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "tween",
-              duration: 0.2,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
             }}
+            className="animate-float"
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
-              alt="Ricardo portrait"
+              src="/WhatsApp Image 2025-09-10 at 15.53.38_d9a87916.jpg"
+              alt="ps.code"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-32 w-32 rounded-full object-cover border-4 border-primary-400 shadow-2xl animate-glow hover:scale-110 transition-transform duration-300"
             />
           </motion.div>
 
@@ -61,12 +64,33 @@ export default function Intro() {
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
       >
-        <span className="font-bold">Hello, I'm Ricardo.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">
+          <TypewriterText 
+            text="Halo, saya Ilham Basuttaqwa." 
+            className="bg-gradient-primary bg-clip-text text-transparent"
+            delay={500}
+          />
+        </span>
+        <br />
+        <span className="font-bold mt-2 block">
+          Saya seorang{" "}
+          <GlitchText 
+            text="IT Specialist" 
+            className="bg-gradient-to-r from-accent-500 to-primary-500 bg-clip-text text-transparent"
+            intensity="medium"
+          />
+        </span>
+        <br />
+        <span className="mt-2 block">
+          Saya fokus pada{" "}
+          <RotatingText 
+            texts={["pengembangan web", "sistem IT", "React & Next.js", "remote working"]}
+            className="font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
+            interval={2500}
+          />
+        </span>
       </motion.h1>
 
       <motion.div
@@ -79,27 +103,27 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gradient-primary text-white px-8 py-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary-500/25"
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection("Kontak");
             setTimeOfLastClick(Date.now());
           }}
         >
           Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition-transform duration-300" />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-8 py-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all duration-300 cursor-pointer border-2 border-primary-200 hover:border-primary-400 dark:bg-dark-100 dark:border-dark-300 shadow-lg hover:shadow-xl"
           href="/CV.pdf"
           download
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition-transform duration-300 text-primary-600" />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-primary-600 hover:text-primary-800 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-300 cursor-pointer border-2 border-primary-200 hover:border-primary-400 dark:bg-dark-100 dark:text-primary-400 dark:border-dark-300 shadow-lg hover:shadow-xl hover:shadow-primary-500/20"
           href="https://linkedin.com"
           target="_blank"
         >
@@ -107,8 +131,8 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
+          className="bg-white p-4 text-accent-600 hover:text-accent-800 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-300 cursor-pointer border-2 border-accent-200 hover:border-accent-400 dark:bg-dark-100 dark:text-accent-400 dark:border-dark-300 shadow-lg hover:shadow-xl hover:shadow-accent-500/20"
+          href="https://github.com/ilbasuttaqwa"
           target="_blank"
         >
           <FaGithubSquare />

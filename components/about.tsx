@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("Tentang");
 
   return (
     <motion.section
@@ -17,32 +17,28 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>Tentang Saya</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        Saya adalah seorang{" "}
+        <span className="font-medium">IT Specialist</span> yang bekerja di CV Tiga Putra Perkasa sebagai{" "}
+        <span className="font-medium">remote worker</span>.{" "}
+        <span className="italic">Passion saya dalam teknologi</span> dimulai dari ketertarikan pada
+        problem-solving dan inovasi digital. Saya <span className="underline">menikmati</span> proses
+        mengembangkan solusi teknologi yang dapat membantu efisiensi bisnis. Tech stack utama saya
+        adalah{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Next.js, Node.js, PHP, dan MySQL
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . Saya juga berpengalaman dengan sistem administrasi jaringan, troubleshooting, dan manajemen database.
+        Saya selalu antusias untuk mempelajari teknologi baru dan mengikuti perkembangan industri IT.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">Di luar pekerjaan</span>, saya senang mengeksplorasi
+        teknologi terbaru, berkontribusi pada proyek open source, dan berbagi pengetahuan dengan komunitas developer.
+        Saya juga menikmati{" "}
+        <span className="font-medium">pembelajaran berkelanjutan</span> melalui kursus online
+        dan sertifikasi IT untuk terus mengasah kemampuan profesional saya.
       </p>
     </motion.section>
   );

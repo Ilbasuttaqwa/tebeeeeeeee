@@ -8,78 +8,78 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
-    name: "Home",
+    name: "Beranda",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "Tentang",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "Proyek",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Keahlian",
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Pengalaman",
     hash: "#experience",
   },
   {
-    name: "Contact",
+    name: "Kontak",
     hash: "#contact",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Pendidikan IT",
+    location: "Indonesia",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Menyelesaikan pendidikan di bidang teknologi informasi dan mulai mengembangkan keahlian dalam programming dan pengembangan web.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2018 - 2020",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "IT Specialist",
+    location: "CV Tiga Putra Perkasa",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Bekerja sebagai IT specialist di CV Tiga Putra Perkasa, menangani sistem informasi, troubleshooting, dan pengembangan aplikasi internal perusahaan.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2020 - 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Remote IT Developer",
+    location: "CV Tiga Putra Perkasa (Remote)",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Saat ini bekerja sebagai remote worker di CV Tiga Putra Perkasa, fokus pada pengembangan aplikasi web menggunakan teknologi modern seperti React, Next.js, dan Node.js.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022 - sekarang",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Fingerprint Authentication System",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Sistem autentikasi biometrik menggunakan fingerprint untuk keamanan akses yang tinggi. Dilengkapi dengan enkripsi data dan logging aktivitas pengguna.",
+    tags: ["Python", "OpenCV", "Machine Learning", "SQLite", "Tkinter"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Sistem Manajemen Perusahaan",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Aplikasi web untuk mengelola data karyawan, inventori, dan laporan keuangan di CV Tiga Putra Perkasa. Fitur lengkap dengan dashboard admin dan sistem notifikasi.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Node.js"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Portfolio Website",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Website portfolio personal yang responsif dan modern dengan animasi smooth. Menampilkan proyek, pengalaman, dan skills dengan desain yang menarik.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer Motion"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -94,14 +94,18 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
+  "MySQL",
   "Express",
-  "PostgreSQL",
+  "PHP",
+  "Laravel",
   "Python",
-  "Django",
+  "Linux",
+  "Windows Server",
+  "Network Administration",
+  "System Troubleshooting",
+  "Database Management",
+  "API Development",
+  "Docker",
   "Framer Motion",
 ] as const;
